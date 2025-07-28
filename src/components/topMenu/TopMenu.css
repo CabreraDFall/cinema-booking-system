@@ -1,0 +1,8 @@
+.top-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 40px 20px
+}
+

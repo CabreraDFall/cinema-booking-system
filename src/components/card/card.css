@@ -1,0 +1,79 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #141414;
+  border-radius: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 237px;
+}
+
+.card-title{
+  font-size: 16px;
+  font-weight: 600;
+  width: 70%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;           /* Máximo 2 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-info{
+  width: 237px;
+  padding: 8px 16px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  color: #B0B0B0;
+  gap: 8px;
+}
+
+
+.card-details{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  gap: 4px;
+  font-weight: 400;
+  padding: 8px 0;
+}
+
+.card-details span {
+  color: #fffafa80;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 16px;
+    gap: 8px;
+    align-content: center;
+    align-items: center;
+}
+
+.category-pills-container {
+  display: flex;  
+  gap: 4px;
+  padding: 8px 16px;
+  width: 70%;
+  overflow-x: auto;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+}
+
+.category-pills-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+.category-pill{
+ 
+  padding: 4px 8px;
+  border-radius: 12px;
+  background-color: #2C2C2C;
+  font-size: 10px;
+  color: #B0B0B0;
+  text-transform: uppercase;
+}
+
