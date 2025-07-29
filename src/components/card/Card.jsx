@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './card.css'
 
 import movie1 from '../../assets/images/movie1.png';
@@ -15,11 +16,11 @@ function CategoryPills() {
 
 function Card() {
     return (
-        <div className="card-container">
+        <Link to="/movie" className="card-container">
             <div className='card-header'>
                 <img src={movie1} alt="Movie Poster" />
                 <div className='card-info'>
-                    <h1 className="card-title">Card Componento asdasdasdasdasdqasasssssssssssssssssss</h1>
+                    <h1 className="card-title">Card Componento </h1>
                     <div className='card-details'>
                         <span className='duration'>2h 6min</span>
                         <span>4.5</span>
@@ -36,7 +37,7 @@ function Card() {
                 </div>
             </div>
 
-        </div>
+        </Link>
     )
 }
 

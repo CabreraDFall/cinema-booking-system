@@ -1,43 +1,19 @@
-import TopMenu from './components/topMenu/TopMenu';
 import Card from './components/card/Card';
-import './App.css'
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home/Home';
+import MovieDetails from './pages/movieDetails/MovieDetails';
 
 function App() {
-
   return (
-    <>
-      <TopMenu />
-      <div className='card-list'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movie" element={<MovieDetails />} />
 
-      </div>
-      <div className='card-next-week'>
-        <h4>Proximas semana</h4>
-        <div className='card-list'>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-
-        </div>
-
-      </div>
-
-    </>
-  )
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App

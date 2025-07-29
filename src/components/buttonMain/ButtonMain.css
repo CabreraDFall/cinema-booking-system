@@ -1,0 +1,15 @@
+.button-main {
+  margin: 70px 0 0 0;
+  padding: 15px 120px;
+  background-color: #e91d1d;
+  color: #fffafa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+span {
+  font-weight: medium;
+  font-size: 18px;
+}
